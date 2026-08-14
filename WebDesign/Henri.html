@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: cadetblue;
+        }
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 5px;
+            justify-content: center;
+            display: flex;
+            opacity: 0;
+            animation: showName 3s forwards;
+        }
+        .name span {
+            opacity: 0;
+            animation: revealText 1s forwards;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            margin-top: 20px;
+            opacity: 0;
+            animation: showHeart 1s 3s forwards;
+        }
+        @keyframes showName {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes revealText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes showHeart {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="name">
+        <span style="animation-delay: 0s;">H</span>
+        <span style="animation-delay: 1s;">e</span>
+        <span style="animation-delay: 2s;">n</span>
+        <span style="animation-delay: 3s;">r</span>
+        <span style="animation-delay: 4s;">i</span>
+    </div>
+
+    <div class="heart">❤️</div>
+
+</body>
+</html>
